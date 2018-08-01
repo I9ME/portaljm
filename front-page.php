@@ -90,10 +90,22 @@ get_header(); ?>
 
 									<?php endif; ?>
 
+								
 								</main><!-- #main -->
 							</div><!-- #primary -->
 						<?php } ?>
 					</div><!-- .dt-news-main -->
+					<div class="galeria">
+						<div class="container">
+							<h2>Galeria de vídeos</h2>
+							<ul id="owl-galeria">
+								<li>01</li>
+								<li>02</li>
+								<li>03</li>
+								<li>04</li>
+							</ul>
+						</div>
+					</div>
 				</div><!-- .col-lg-9 -->
 
 				<div class="col-lg-3 col-md-3">
@@ -163,4 +175,6 @@ get_header(); ?>
 
 	<?php endif; ?>	
 
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/vendor/owl.carousel.min.js' ?>"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/main.js' ?>"></script>
 <?php get_footer(); ?>
