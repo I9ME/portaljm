@@ -6,7 +6,7 @@ jQuery(function($) {
   ========================================================================================= */
   $('#owl-galeria').owlCarousel({
     items: 1,
-    nav: false,
+    nav: true,
     dots: true,
     navText: false,
     marginright: 0,
@@ -17,17 +17,12 @@ jQuery(function($) {
     responsive: {
       0: {
         items: 1,
-        nav: true
       },
       600: {
         items: 3,
-        nav: true
       },
       1000: {
-        items: 4,
-        nav: false,
-        dots: false,
-        loop: false
+        items: 3,
       }
     }
   });

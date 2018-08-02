@@ -13,6 +13,7 @@
  */
 
 get_header(); ?>
+	
 
 	<?php if ( 'page' == get_option( 'show_on_front' ) ) :
 
@@ -96,15 +97,22 @@ get_header(); ?>
 						<?php } ?>
 					</div><!-- .dt-news-main -->
 					<div class="galeria">
-						<div class="container">
-							<h2>Galeria de vídeos</h2>
-							<ul id="owl-galeria">
-								<li>01</li>
-								<li>02</li>
-								<li>03</li>
-								<li>04</li>
-							</ul>
-						</div>
+						<header class="header-section">
+							<div class="container">
+								<h2 class="header-section__title">Galeria de vídeos</h2>
+							</div>
+						</header>
+						
+							
+								<?php get_template_part( 'template-parts/html', 'news-galeria' ); ?>
+								<?php 
+									// $url = 'https://www.youtube.com/watch?v=xwtdhWltSIg&list=RDxwtdhWltSIg&start_radio=1';
+									// $url = explode('v=', $url);
+									// $url = explode('&', $url[1]);
+									// echo $url[0];
+
+								 ?>
+					
 					</div>
 				</div><!-- .col-lg-9 -->
 
@@ -175,6 +183,5 @@ get_header(); ?>
 
 	<?php endif; ?>	
 
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/vendor/owl.carousel.min.js' ?>"></script>
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/main.js' ?>"></script>
+
 <?php get_footer(); ?>

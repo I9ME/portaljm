@@ -12,20 +12,84 @@ Version:        Version: 1.3.7
  * Comece a implementar o CSS
  */
 
+.header-section{
+	float: left;
+    width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+}
+.header-section__title{
+	font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 0;
+}
 
+
+
+/* GALERIA HOMER */
 #owl-galeria{
-	margin: 0;
-	padding: 0;
+	margin: 15px 0;
+	padding: 0 15px;
 	width: 100%;
     float: left;
 }
+
 #owl-galeria li{
-	width: 33%;
-	height: 100px;
-	background: #000;
+	width: 97%;
 	float: left;
 }
 
+
+.galeria{
+	width: 100%;
+	float: left;
+	border: 1px solid #e5e5e5;
+}
+.galeria .news{
+	margin: 0;
+}
+.galeria .news__item img{
+	height: 180px;
+	object-fit: cover;
+	position: relative;
+}
+.galeria .news__item img::after{
+	content: '';
+	position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(../images/play.png) no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    z-index: 999;
+}
+.galeria .news-title{
+	color: #000;
+	font-size: 16px;
+    font-weight: bold;
+}
+.galeria .news-subtitle{
+	color: #000;
+}
+
+
+
+
+
+
+/* SINGLE VÍDEOS */
+.page-videos .news .videos .entry-content{
+	font-size: 16px;
+}
+
+.page-videos .news .videos .entry-content iframe{
+	height: 480px;
+    width: 100%;
+}
+
+
 .view-all-link{
  	display: none!important;	
- }
+}
+
